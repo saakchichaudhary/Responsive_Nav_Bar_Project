@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="Responsivenavbar.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<html>
+<body class="page-top">
+
+    <header class="header">
+      <a class="logo" href=".page-top">LogoImage</a>
+      <input class="menu-btn" type="checkbox" id="menu-btn" />
+      <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+      <ul class="menu">
+        <li><a href="#one" class="link link-theme link-arrow">HOME</a></li>
+        <li><a href="#two" class="link link-theme link-arrow">SERVICE</a></li>
+        <li><a href="#three" class="link link-theme link-arrow">ABOUT US</a></li>
+        <li><a href="#four" class="link link-theme link-arrow">CONTACT</a></li>
+      </ul>
+    </header>
+    <div>
+    <div id="main" class="main">
+      <section class="intro">
+        <article class="container">
+          <h1>
+              Welcome To <strong>My Page</strong>
+            </h1>
+          <p>
+            <a href=".footer" class="link link-theme link-arrow" title="Let’s Build Something Great">LET’S BUILD SOMETHING GREAT</a>
+          </p>
+        </article>
+      </section>
+      <section class="work">
+      <article class="container" id="one">
+      </article>
+      </article>
+    </section>
+      <footer class="footer">
+
+      <div class="container">
+        <hr>
+        <article class="foot-content-left">
+          <ul>@copyright</ul>
+        </article>
+
+        <article class="foot-content">
+          <ul>
+            <li><a href="example@gmail.com">example@gmail.com</a></li>
+            <li class="social"><a href="https://www.instagram.com/code_with_me0123?igsh=MXUxZWFmM3Vsc2lmYw%3D%3D">Instagram</a></li>
+            <li class="social"><a href="https://www.youtube.com/@code_with_sakxi">Youtube</a></li>
+            <li class="social"><a href="https://www.linkedin.com/in/contactsaakchi">Linkedin</a></li>
+            <li class="social"><a href="https://www.github.com/saakchichaudhary">Github</a></li>
+          </ul>
+        </article>
+      </div>
+    </footer>
+    </div>
+  </div>
+  <script src="Responsivenavbar.js">
+    $('a').click(function(e){
+    e.preventDefault();
+    $('body, html').animate({
+        scrollTop: $( $(this).attr('href') ).offset().top - 120
+    }, 1000);
+});
+  </script>
+</body>
+
+</html>
